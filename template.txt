@@ -1,0 +1,5 @@
+import re
+import os
+
+file = open('./DAY_FULL_DAY/INPUT_FULL_DAY.txt', 'r')
+lines = list(map(lambda x: re.sub(r'\n', '', x), file.readlines()))

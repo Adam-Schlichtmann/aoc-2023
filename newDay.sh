@@ -7,6 +7,7 @@ FULL_DAY=$(printf "%02d" $SHORT_DAY)
 mkdir DAY_$FULL_DAY
 cd DAY_$FULL_DAY
 touch $FULL_DAY.py 
+cat ../template.txt | sed -e "s/FULL_DAY/${FULL_DAY}/g" > $FULL_DAY.py 
 touch INPUT_$FULL_DAY.txt
 cd ../
 
